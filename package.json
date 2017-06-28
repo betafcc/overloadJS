@@ -1,0 +1,37 @@
+{
+  "name": "@betafcc/overload",
+  "version": "0.1.0",
+  "description": "Utility for creating polymorphic functions",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm test -- --watch",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betafcc/overloadJS.git"
+  },
+  "keywords": [
+    "polymorphism",
+    "functional",
+    "utility",
+    "overload",
+    "higher-order"
+  ],
+  "author": "Beta Faccion <betafcc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/betafcc/overloadJS/issues"
+  },
+  "homepage": "https://github.com/betafcc/overloadJS#readme",
+  "dependencies": {
+    "lodash.zipwith": "4.2.0"
+  },
+  "devDependencies": {
+    "@betafcc/is": "1.2.0",
+    "chai": "4.0.2",
+    "jsverify": "0.8.2",
+    "lodash.isequal": "4.5.0",
+    "mocha": "3.4.2"
+  }
+}
