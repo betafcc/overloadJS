@@ -48,7 +48,7 @@ const fmap = f => overload([
   [ [set]      , (s)    => new Set([...s].map(f))   ],
   [ [string]   , (str)  => [...str].map(f).join('') ],
   [ [promise]  , (p)    => p.then(f)                ],
-  [ [dict]     , (dick) => Object.entries(dick)
+  [ [dict]     , (d)    => Object.entries(d)
                           .reduce((acc, [k, v]) =>
                             (acc[k] = f(v), acc)
                           , {})                     ],
