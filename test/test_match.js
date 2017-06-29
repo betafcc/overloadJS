@@ -3,7 +3,7 @@ const zipWith  = require('lodash.zipwith');
 const {number, equal, string} = require('@betafcc/is');
 
 
-const match = require('../src/match.js');
+const {match} = require('../src/util.js');
 
 
 

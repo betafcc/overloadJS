@@ -1,6 +1,6 @@
 {
   "name": "@betafcc/overload",
-  "version": "0.1.1",
+  "version": "0.2.2",
   "description": "Utility for creating polymorphic functions",
   "main": "src/index.js",
   "scripts": {
@@ -25,10 +25,11 @@
   },
   "homepage": "https://github.com/betafcc/overloadJS#readme",
   "dependencies": {
+    "lodash.clonedeep": "4.5.0",
     "lodash.zipwith": "4.2.0"
   },
   "devDependencies": {
-    "@betafcc/is": "1.2.0",
+    "@betafcc/is": "^1.2.0",
     "chai": "4.0.2",
     "jsverify": "0.8.2",
     "lodash.isequal": "4.5.0",

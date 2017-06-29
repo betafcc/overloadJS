@@ -7,14 +7,14 @@ const {
 const overload = require('../src/index.js');
 
 
-const add = overload([
+const add = overload(
   [[number, number], (a, b) => a + b             ],
   [[string, string], (a, b) => a.concat(b)       ],
-  [[array,   array], (a, b) => zipWith(a, b, add)],
-]);
+  [[array,   array], (a, b) => zipWith(a, b, add)]
+);
 
 
-const fmap = f => overload([
+const fmap = f => overload(
   [ [array]    , (arr)  => arr.map(f)               ],
   [ [set]      , (s)    => new Set([...s].map(f))   ],
   [ [string]   , (str)  => [...str].map(f).join('') ],
@@ -25,8 +25,8 @@ const fmap = f => overload([
                           , {})                     ],
   [ [iterator] , function* (it) {
                    for (const el of it) yield f(el)
-                 }                                  ],
-]);
+                 }                                  ]
+);
 
 const fsquare = fmap(x => x*x);
 

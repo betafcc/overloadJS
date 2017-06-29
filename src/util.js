@@ -1,4 +1,8 @@
+const {inspect} = require('util');
+
 const zipWith = require('lodash.zipwith');
+const cloneDeep = require('lodash.clonedeep');
+
 
 const match = mapping => args =>
   mapping
@@ -13,4 +17,12 @@ const match = mapping => args =>
   );
 
 
-module.exports = match;
+const concat = arrA => arrB =>
+  cloneDeep(arrA).concat(cloneDeep(arrB));
+
+
+module.exports = {
+  inspect,
+  match,
+  concat,
+};
