@@ -32,6 +32,13 @@ const overload = (...cases) => {
   overloaded.addCase = (signature, f) =>
     overloaded.addCases([signature, f]);
 
+  overloaded.setCases = (...newCases) =>
+    newCases.forEach(newCase => overloaded.cases.push(newCase));
+
+  overloaded.setCase = (signature, f) =>
+    overloaded.setCases([signature, f]);
+
+
   return overloaded;
 };
 

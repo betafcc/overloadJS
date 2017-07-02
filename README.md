@@ -75,3 +75,16 @@ const fmap = f => overload(
 // probably cache the overload object and curry after
 
 ```
+
+Full Api:
+----------------
+
+```js
+overload(...[ [...tests], handler ] ])
+    .cases \\ The inner array containing the cases
+    .signatures() \\ Returns a array of the tests
+    .addCase([...tests], handler)
+    .addCases(...[ [...tests], handler ] ])
+    .setCase([...tests], handler) \\ same as Add but in-place, returns undefined
+    .setCases(...[ [...tests], handler ] ]) \\ same
+```

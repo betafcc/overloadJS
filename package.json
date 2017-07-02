@@ -1,6 +1,6 @@
 {
   "name": "@betafcc/overload",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Utility for creating polymorphic functions",
   "main": "src/index.js",
   "scripts": {
